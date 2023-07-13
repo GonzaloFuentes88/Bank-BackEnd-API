@@ -43,7 +43,7 @@ public class SecurityConfig{
 		
 		return http
 				.csrf()
-				.disable()
+				.and()
 				.authorizeRequests()
 				.anyRequest().authenticated()
 				.and()
